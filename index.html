@@ -1,63 +1,99 @@
-<!DOCTYPE html>
-<html lang="nl">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link href="jumbotron.css" rel="stylesheet">
-    
-    <title>Kristof Vandenbroucke</title>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IN CONTEXT.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="about.html">Over mezelf</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
-            </ul>
-        </div>
-    </nav>
-    <main role="main">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <div class="container">
-                <h1 class="display-3" font-size = "30px">E-portfolio Kristof Vandenbroucke</h1>
-                <p><a class="btn btn-primary btn-lg" href="about.html" role="button">Over mezelf &raquo;</a></p>
-            </div>
-        </div>
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Over mezelf</h2>
-                    <p>Extra informatie over wie ik ben en wat mijn verwezenlijkingen zijn. Dit op zowel educatief vlak als recreatief vlak. Op deze subpagina vindt u ook een pdf terug van mijn CV. </p>
-                    <p><a class="btn btn-secondary" href="about.html" role="button">Over mezelf &raquo;</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h2>Contact</h2>
-                    <p>Op deze subpagina vindt u enkele contactgegevens terug om persoonlijk contact met me op te nemen. </p>
-                    <p><a class="btn btn-secondary" href="contact.html" role="button">Contact &raquo;</a></p>
-                </div>
-            </div>
-            <hr> </div>
-        <!-- /container -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">IC.</a>
+        <ul class="nav-list">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#service">Service</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <a href="#about" class="scrolling-arrow"></a>
+  <div class="container">
+    <section id="home">
+      <h1>IN CONTEXT</h1>
+      <div class="background-cover"></div>
+      <!-- <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p> -->
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+    </section>
+    <section id="service">
+      <h2>Service</h2>
+      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+      <div class="spotlight-group">
+        <a class="spotlight" href="./images/flower.jpg">
+          <img class="spotlight-image" src="./images/flower.jpg">
+        </a>
+        <a class="spotlight" href="./images/mountain.jpg">
+          <img class="spotlight-image" src="./images/mountain.jpg">
+        </a>
+        <a class="spotlight" href="./images/sea.jpg">
+          <img class="spotlight-image" src="./images/sea.jpg">
+        </a>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p>
+    </section>
+    <footer class="footer-distributed">
 
-    </main>
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">&copy; Kristof Vandenbroucke - Student toegepaste informatica UCLL 2017-2018</p>
-        </div>
-        <!-- /.container -->
+			<!-- <div class="footer-left">
+          <img src="img/logo.png">
+				<h3>IN CONTEXT</h3>
 
-    </footer>
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#about">About</a>
+					|
+					<a href="#service">Service</a>
+					|
+					<a href="#contact">Contact</a>
+				</p>
+			</div> -->
+			<div class="footer-right">
+				<!-- <p class="footer-company-about">
+					<span>About the company</span>
+					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p> -->
+				<div class="footer-icons">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+				</div>
+			</div>
+		</footer>
+  </div>
+
 </body>
+
+
+<footer>
+  <script src="main.js"></script>
+  <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js"></script>
+</footer>
 
 </html>
