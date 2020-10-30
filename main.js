@@ -24,3 +24,24 @@ window.addEventListener('scroll', () => {
   let windowPosition = window.scrollY > 0;
   header.classList.toggle('scrolling-active', windowPosition);
 });
+
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-list');
+  const navLinks = document.querySelectorAll('.nav ul li');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.4s ease forwards ${index / 7 + 0.1}s`;
+      }
+    });
+    burger.classList.toggle('toggle');
+  });
+}
+
+navSlide();
