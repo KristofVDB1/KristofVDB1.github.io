@@ -247,7 +247,6 @@ section#contact {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /* footer */
 
 .footer-distributed{
@@ -324,6 +323,15 @@ section#contact {
 
 	margin-right: 3px;
 	margin-bottom: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;  
+  border-radius: 2px;       
 }
 
 /* media queries */
