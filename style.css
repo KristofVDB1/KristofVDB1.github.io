@@ -326,7 +326,7 @@ section#contact {
 }
 
 body::-webkit-scrollbar {
-  width: 8px;               /* width of the entire scrollbar */
+  width: 8px;
 }
 
 body::-webkit-scrollbar-thumb {

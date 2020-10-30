@@ -26,10 +26,26 @@ window.addEventListener('scroll', () => {
 });
 
 const navSlide = () => {
+  // get all elements
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-list');
   const navLinks = document.querySelectorAll('.nav ul li');
+  const container = document.querySelector('.container');
 
+  // close nav-menu on click outside
+  container.addEventListener('click', () => {
+    if (nav.classList.value.includes('nav-active')) {
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+      navLinks.forEach((link) => {
+        if (link.style.animation) {
+          link.style.animation = '';
+        }
+      });
+    }
+  });
+
+  // toggle nav menu open when clicking the burger icon
   burger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
 
