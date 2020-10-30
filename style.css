@@ -323,19 +323,13 @@ section#contact {
 
 @media (max-height:800px){
 	footer { position: static; }
-	header { padding-top:40px; }
 }
 
 @media (max-width: 1024px) {
-  /* body {
-    overflow-x: hidden;
-  } */
-
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
-		margin-bottom: 40px;
 		text-align: center;
   }
   
