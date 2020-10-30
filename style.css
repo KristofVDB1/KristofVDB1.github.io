@@ -202,6 +202,7 @@ section#contact {
   border-top: none;
   border-right: 3px #fff solid;
   border-bottom: 3px #fff solid;
+  animation: appearingArrow 1s;
   z-index: 1;
 }
 
@@ -443,6 +444,15 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@keyframes appearingArrow {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: -20px;
+  }
+}
 
 @keyframes navLinkFade{
   from{
