@@ -221,6 +221,12 @@ section {
   /* scroll-snap-align: center; */
 }
 
+.section__content {
+  /* padding: 100px; */
+  width: 90%;
+  margin-left: 5%;
+}
+
 .banner {
   align-items: center;
 }

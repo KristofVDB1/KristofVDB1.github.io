@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <script defer src="https://unpkg.com/core-js-bundle@3.6.5/minified.js"></script>
   <meta charset="UTF-8">
@@ -25,12 +26,12 @@
         </ul>
         <div class="language-picker">
           <label for="language__select">
-          <select id="language__select" class="language__select">
-            <option class="language__select__option">En</option>
-            <option class="language__select__option">Fr</option>
-            <option class="language__select__option">Nl</option>
-          </select>
-        </label>
+            <select id="language__select" class="language__select">
+              <option class="language__select__option">En</option>
+              <option class="language__select__option">Fr</option>
+              <option class="language__select__option">Nl</option>
+            </select>
+          </label>
         </div>
         <div class="burger">
           <div class="line1"></div>
@@ -45,30 +46,35 @@
     <section id="home" class="banner" data-localize="content.home">
       <!-- <h1>IN CONTEXT</h1> -->
       <div class="background-cover"></div>
-      <!-- <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quis!</p> -->
     </section>
     <section id="about">
-      <h2 data-localize="menu.about">About</h2>
-      <p data-localize="content.about" class="lead"></p>
+      <div class="section__content">
+        <h2 data-localize="menu.about">About</h2>
+        <p data-localize="content.about" class="lead"></p>
+      </div>
     </section>
     <section id="service">
-      <h2 data-localize="menu.service">Service</h2>
-      <p data-localize="content.service" class="lead"></p>
-      <div class="spotlight-group" data-control="">
-        <a name="spotlight" class="spotlight" href="./images/flower.jpg" data-description="This is a description.">
-          <img class="spotlight-image" src="./images/flower.jpg" alt="spotlight-image-preview">
-        </a>
-        <a name="spotlight" class="spotlight" href="./images/mountain.jpg" data-description="This is a description.">
-          <img class="spotlight-image" src="./images/mountain.jpg" alt="spotlight-image-preview">
-        </a>
-        <a name="spotlight" class="spotlight" href="./images/sea.jpg" data-description="This is a description.">
-          <img class="spotlight-image" src="./images/sea.jpg" alt="spotlight-image-preview">
-        </a>
+      <div class="section__content">
+        <h2 data-localize="menu.service">Service</h2>
+        <p data-localize="content.service" class="lead"></p>
+        <div class="spotlight-group" data-control="">
+          <a name="spotlight" class="spotlight" href="./images/flower.jpg" data-description="This is a description.">
+            <img class="spotlight-image" src="./images/flower.jpg" alt="spotlight-image-preview">
+          </a>
+          <a name="spotlight" class="spotlight" href="./images/mountain.jpg" data-description="This is a description.">
+            <img class="spotlight-image" src="./images/mountain.jpg" alt="spotlight-image-preview">
+          </a>
+          <a name="spotlight" class="spotlight" href="./images/sea.jpg" data-description="This is a description.">
+            <img class="spotlight-image" src="./images/sea.jpg" alt="spotlight-image-preview">
+          </a>
+        </div>
       </div>
     </section>
     <section id="contact">
-      <h2 data-localize="menu.contact">Contact</h2>
-      <p data-localize="content.contact" class="lead"></p>
+      <div class="section__content">
+        <h2 data-localize="menu.contact">Contact</h2>
+        <p data-localize="content.contact" class="lead"></p>
+      </div>
     </section>
     <footer class="footer-distributed">
 
@@ -103,7 +109,7 @@
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
   <script src="./jquery.js"></script>
   <script src="./jquery.localize.min.js"></script>
-  <script defer src="main.js"></script>
+  <script src="main.js"></script>
   <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js"></script>
 </body>
 
