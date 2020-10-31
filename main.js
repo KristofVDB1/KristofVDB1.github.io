@@ -1,14 +1,16 @@
 // scroll-effect
-const scrolling = new SmoothScroll('a[href*="#"]', {
-  speed: 600
-});
+const scrolling = new SmoothScroll('a[href*="#"]',
+  {
+    speed: 600
+  });
 
 // event listener scroll navbar
+let scrollBool = false;
 const mainNavLinks = document.querySelectorAll('nav ul li a');
-window.addEventListener('scroll', () => {
-  const fromTop = window.scrollY;
-
-  mainNavLinks.forEach(link => {
+const langSelector = document.querySelector('.language-picker');
+document.addEventListener('scroll', function () {
+  const fromTop = window.pageYOffset;
+  mainNavLinks.forEach(function (link) {
     let section = document.querySelector(link.hash);
 
     if (
@@ -21,11 +23,14 @@ window.addEventListener('scroll', () => {
     }
   });
   let header = document.querySelector('header');
-  let windowPosition = window.scrollY > 0;
-  header.classList.toggle('scrolling-active', windowPosition);
+  let windowPosition = window.pageYOffset  > 0;
+  if (scrollBool !== windowPosition) {
+    scrollBool = windowPosition;
+    header.classList.toggle('scrolling-active', windowPosition);
+  }
 });
 
-const navSlide = () => {
+function navSlide() {
   // get all elements
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-list');
@@ -33,11 +38,12 @@ const navSlide = () => {
   const container = document.querySelector('.container');
 
   // close nav-menu on click outside
-  container.addEventListener('click', () => {
+  container.addEventListener('click', function () {
     if (nav.classList.value.includes('nav-active')) {
       nav.classList.toggle('nav-active');
       burger.classList.toggle('toggle');
-      navLinks.forEach((link) => {
+      langSelector.classList.toggle('toggle');
+      navLinks.forEach(function (link) {
         if (link.style.animation) {
           link.style.animation = '';
         }
@@ -46,18 +52,31 @@ const navSlide = () => {
   });
 
   // toggle nav menu open when clicking the burger icon
-  burger.addEventListener('click', () => {
+  burger.addEventListener('click', function () {
     nav.classList.toggle('nav-active');
-
-    navLinks.forEach((link, index) => {
+    navLinks.forEach(function (link, index) {
       if (link.style.animation) {
         link.style.animation = '';
       } else {
-        link.style.animation = `navLinkFade 0.4s ease forwards ${index / 7 + 0.1}s`;
+        link.style.animation = 'navLinkFade 0.4s ease forwards ' + (index / 7 + 0.1) + 's';
       }
     });
     burger.classList.toggle('toggle');
+    langSelector.classList.toggle('toggle');
   });
 }
 
+// translate
+
+function translate() {
+  $("[data-localize]").localize("language", { language: "en" });
+}
+
+// language selector
+
+document.getElementsByClassName('language__select')[0].addEventListener('change', function(e) {
+  $("[data-localize]").localize("language", { language: e.target.value });
+})
+
+translate();
 navSlide();

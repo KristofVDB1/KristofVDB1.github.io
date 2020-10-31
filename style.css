@@ -6,11 +6,22 @@
     box-sizing: border-box;
 } 
 
+html, body{
+  height:100%;
+}
+
+.container {
+  background: #87ccfc;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
 body {
   font-family: 'Aleo';
-  background: #333;
+  background: #333333;
   color: #fff;
-  height: 100vh;
+  height: 100%;
   line-height: 1.6;
   letter-spacing: 1px;
 }
@@ -26,38 +37,42 @@ header{
 .container {
   width: 100%;
   height: 100%;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
 }
 
-.nav{
-    width: 100%;
-    height: 2em;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: height .4s ease;
+.nav {
+  width: 100%;
+  height: 2em;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: height .4s ease;
 }
 
 .nav .logo{
-    font-size: 1.8rem;
-    color: #fff;
-    text-decoration: none;
-    margin-left: 1rem;
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 .nav-list{
-    text-align: center;
-    list-style: none;
-    display: flex;
-    margin-right: auto;
-    margin-left: 5rem;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  margin-right: auto;
+  margin-left: 5rem;
 }
 
 .nav-link{
-    margin: 0 2rem;
-    position: relative;
-    color: #fff;
-    text-decoration: none;
+  font-size: 1em;
+  margin: 0 2rem;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
 }
 
 .burger {
@@ -73,6 +88,66 @@ header{
   transition: all 0.3s ease;
 }
 
+.language-picker {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  margin-right: 5%;
+  width: 50px;
+  height: 34px;
+  color: #fff;
+  cursor: pointer;
+  /* margin-right:-120px; */
+  border: none;
+}
+
+.language-picker:after {
+  content: '\f078';
+  font: normal normal normal 13px FontAwesome;
+  color: inherit;
+  left: 30px;
+  top: -34px;
+  border: none;
+  position: relative;
+  pointer-events: none;
+  border: none;
+}
+
+.language__select {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-family: 'Aleo';
+  background: none;
+  color: inherit;
+  font-size: 1em;
+  border: none;
+}
+
+/* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+display: none;
+}
+
+.language-picker select {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none; 
+}
+
+.language__select__option {
+  text-transform: none;
+  background-color: none;
+  /* color: #000; */
+  font-size: 1em;
+  z-index: 1;
+}
+
+.scrolling-active .language-picker {
+  color: #313131;
+}
+
 nav ul li a.active {
   transform: scaleX(0);
   color: #fff;
@@ -80,16 +155,16 @@ nav ul li a.active {
 }
 
 .nav-link::after, nav ul li a::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: rgba(221,221,0, 1);
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform .5s ease;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: rgba(221,221,0, 1);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .5s ease;
 }
 
 .nav-link:hover::after, nav ul li a.active::after {
@@ -98,8 +173,8 @@ nav ul li a.active {
 
 /*Apply styles after scroll*/
 .scrolling-active{
-    background-color: rgba(221,221,221, 0.95);
-    border-bottom: 4px solid rgba(221,221,0, 1);
+  background-color: rgba(221,221,221, 0.95);
+  border-bottom: 4px solid rgba(221,221,0, 1);
 }
 
 .scrolling-active .burger div{
@@ -114,8 +189,6 @@ nav ul li a.active {
   color: #313131;
 }
 
-
-
 .scrolling-active .nav a{
   color: #313131;
 }
@@ -126,27 +199,30 @@ nav ul li a.active {
 
 .background-cover { 
   background: black;
-  top: 0;
+  top: 0px;
+  left: 0px;
   height: 100vh;
   width: 100%;
   margin: 0;
-  opacity: 0.5;
+  opacity: 0.3;
   position: absolute;
   z-index: 0;
-
 }
 
 section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   text-align: center;
   width: 100%;
   height: 100vh;
  
   /* Scroll Snap */
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
+}
+
+.banner {
+  align-items: center;
 }
 
 section h1 {
@@ -168,7 +244,8 @@ section h2 {
 
 /* Section Images */
 section#home {
-  background: url('https://images.unsplash.com/photo-1603216808336-2d38e6dc26c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80') no-repeat center center/cover;
+  /* background: url('https://images.unsplash.com/photo-1603216808336-2d38e6dc26c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80') no-repeat center center/cover; */
+  background: url('./images/banner.png') no-repeat center center/cover;
 }
 
 section#about {
@@ -335,18 +412,16 @@ body::-webkit-scrollbar-thumb {
   border-radius: 2px;       
 }
 
-/* media queries */
-
-@media (max-height:800px){
-	footer { position: static; }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 864px) {
 	.footer-distributed .footer-left,
 	.footer-distributed .footer-right{
 		display: block;
 		width: 100%;
 		text-align: center;
+  }
+
+  .language-picker {
+    margin-left: 25%;
   }
   
   .nav-list {
@@ -356,10 +431,11 @@ body::-webkit-scrollbar-thumb {
     width: 50%;
     top: 0vh;
     overflow-y: auto;
+    overflow-x: hidden;
     opacity: 0.8;
     background-color: black;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
@@ -368,10 +444,10 @@ body::-webkit-scrollbar-thumb {
 
   .nav ul li {
     display: block;
-    padding-bottom: 20%;
+    padding-top: 10%;
     opacity: 0;
   }
-
+  
   .scrolling-active .nav a{
     color: white;
   }  
@@ -402,6 +478,11 @@ body::-webkit-scrollbar-thumb {
   .scrolling-active .burger.toggle div {
     background-color: #fff;
   }
+
+  .scrolling-active .language-picker.toggle {
+    color: #fff;
+  }
+
 }
 
 /* responsive navbar */
@@ -455,16 +536,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes navLinkFade{
-  from{
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
-  
-  
-  
-  

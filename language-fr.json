@@ -1,0 +1,13 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "about": "Sur nous",
+    "service": "Service",
+    "contact": "Contact"
+  },
+  "content": {
+    "about": "Demain, dès l’aube, à l’heure où blanchit la campagne, Je partirai. Vois-tu, je sais que tu m’attends. J’irai par la forêt, j’irai par la montagne. Je ne puis demeurer loin de toi plus longtemps. Je marcherai les yeux fixés sur mes pensées, Sans rien voir au dehors, sans entendre aucun bruit, Seul, inconnu, le dos courbé, les mains croisées, Triste, et le jour pour moi sera comme la nuit. Je ne regarderai ni l’or du soir qui tombe, Ni les voiles au loin descendant vers Harfleur, Et, quand j’arriverai, je mettrai sur ta tombe Un bouquet de houx vert et de bruyère en fleur.",
+    "service": "Oh, je voudrais tant que tu te souviennes, Des jours heureux quand nous étions amis, Dans ce temps là, la vie était plus belle, Et le soleil plus brûlant qu’aujourd’hui. Les feuilles mortes se ramassent à la pelle, Tu vois je n’ai pas oublié. Les feuilles mortes se ramassent à la pelle, Les souvenirs et les regrets aussi,",
+    "contact": "Et le vent du nord les emporte, Dans la nuit froide de l’oubli. Tu vois, je n’ai pas oublié, La chanson que tu me chantais. C’est une chanson, qui nous ressemble, Toi qui m’aimais, moi qui t’aimais. Nous vivions, tous les deux ensemble, Toi qui m’aimais, moi qui t’aimais. Et la vie sépare ceux qui s’aiment, Tout doucement, sans faire de bruit. Et la mer efface sur le sable, Les pas des amants désunis."
+  }
+}
