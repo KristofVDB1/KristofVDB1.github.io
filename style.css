@@ -139,7 +139,7 @@ appearance: none;
 .language__select__option {
   text-transform: none;
   background-color: none;
-  /* color: #000; */
+  color: #000;
   font-size: 1em;
   z-index: 1;
 }
