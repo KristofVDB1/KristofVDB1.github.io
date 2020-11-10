@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script defer src="https://unpkg.com/core-js-bundle@3.6.5/minified.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>IN CONTEXT - Project 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projectstyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="navigation-container">
+      <nav class="nav" id="navigation">
+        <a href="index.html" name="logo" class="logo">IC.</a>
+        <div class="nav-cover" id="navigation"></div>
+        <ul class="nav-list" id="navigation">
+          <li><a name="home" data-localize="menu.home" class="nav-link" href="/index.html"></a></li>
+        </ul>
+        <div class="language-picker">
+          <label for="language__select">
+            <select id="language__select" class="language__select">
+              <option class="language__select__option">En</option>
+              <option class="language__select__option">Fr</option>
+              <option class="language__select__option">Nl</option>
+            </select>
+          </label>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <a href="#initial-quote" name="scrolling-arrow" class="scrolling-arrow"></a>
+  <div class="container">
+    <section id="project1-banner" class="project1-banner" data-localize="content.home">
+      <div class="background-cover"></div>
+      <h1>Project 1</h1>
+    </section>
+    <section id="initial-quote" class="section__quote">
+      <div class="section__quote__content">
+        <h3 data-localize="quotes.first-quote-title">Quote</h2>
+          <p data-localize="quotes.first-quote" class="lead"></p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section__content">
+        <!-- <h2 data-localize="menu.about">About</h2> -->
+        <p data-localize="pages.first-project.about" class="lead"></p>
+      </div>
+    </section>
+    <!-- <section id="second-quote" class="section__quote">
+      <div class="section__quote__content">
+        <h3 data-localize="quotes.second-quote-title">Quote</h2>
+          <p data-localize="quotes.second-quote" class="lead"></p>
+      </div>
+    </section> -->
+    <!-- <section id="contact">
+      <div class="section__content">
+        <h2 data-localize="menu.contact">Contact</h2>
+        <p data-localize="content.contact" class="lead"></p>
+      </div>
+    </section> -->
+    <section class="section__image-gallery">
+      <div id="app" data-state="gallery">
+        <div class="project-gallery">
+          <figure class="project-gallery-image">
+            <img src="images/20004_02_CAM001a.jpg" />
+          </figure>
+          <figure class="project-gallery-image">
+            <img src="images/20004_02_CAM002a.jpg" />
+          </figure>
+          <figure class="project-gallery-image">
+            <img src="images/20004_02_CAM003a.jpg" />
+          </figure>
+          <figure class="project-gallery-image">
+            <img src="images/20004_02_CAM004a.jpg" />
+          </figure>
+          <figure class="project-gallery-image">
+            <img src="images/20004_02_CAM005a.jpg" />
+          </figure>
+        </div>
+        <div class="detail">
+          <!--   cloned figure/image goes here!   -->
+        </div>
+      </div>
+    </section>
+    <footer class="footer-distributed">
+      <div class="footer-right">
+        <div class="footer-icons">
+          <a name="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a name="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a name="instagram" href="#"><i class="fa fa-instagram"></i></a>
+          <a name="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+          <a name="youtube" href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="./jquery.js"></script>
+  <script src="./jquery.localize.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

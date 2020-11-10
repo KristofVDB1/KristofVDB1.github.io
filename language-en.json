@@ -2,12 +2,28 @@
   "menu": {
     "home": "Home",
     "about": "About",
-    "service": "Service",
+    "selected-works": "Selected Works",
     "contact": "Contact"
+  },
+  "quotes": {
+    "first-quote-title": "What do our customers say?",
+    "first-quote": "An amazing website with some lovely renderers made by EB. Scroll down below to find out more",
+    "second-quote-title": "This is yet another quote",
+    "second-quote": "I love this website. One of the best. Actually, the best."
   },
   "content": {
     "about": "Gandalf (Norse; IPA: [gand:alf] - 'Elf of the Wand' or 'Wand-elf') the Grey, later known as Gandalf the White, and originally named Olórin (Quenya; IPA: [oˈloːrin] - 'Dreamer' or 'Of Dreams'), was an Istar (Wizard), sent to Middle-earth in the Third Age to combat the threat of Sauron. He joined Thorin and his company to reclaim the Lonely Mountain from Smaug, convoked the Fellowship of the Ring to destroy the One Ring, and led the Free Peoples in the final campaign of the War of the Ring.",
-    "service": "Sauron (Q.: IPA [ˈsaʊron] or IPA [ˈθaʊron] (in Vanyarin) – 'The Abhorred'), the eponymous Lord of the Rings, was a fallen Maia, creator of the One Ring, a gifted student of Vala Aulë the Smith and lieutenant of Melkor (Morgoth). After his master's defeat by the Valar, Sauron became the second Dark Lord and sought to conquer Arda by creating the Rings of Power.",
+    "selected-works": "Sauron (Q.: IPA [ˈsaʊron] or IPA [ˈθaʊron] (in Vanyarin) – 'The Abhorred'), the eponymous Lord of the Rings, was a fallen Maia, creator of the One Ring, a gifted student of Vala Aulë the Smith and lieutenant of Melkor (Morgoth). After his master's defeat by the Valar, Sauron became the second Dark Lord and sought to conquer Arda by creating the Rings of Power.",
     "contact": "Aragorn II, son of Arathorn II and Gilraen, also known as Elessar and Strider, was the 16th Chieftain of the Dúnedain of the North; later crowned King Elessar Telcontar (March 1, 2931 - FO 120 or SR 1541), the 26th King of Arnor and 35th King of Gondor - and first High King of Gondor and Arnor since the short reign of Isildur. He was a great ranger and warrior, and as Isildur's heir he bore the shards of Narsil, reforged and renamed Andúril, Flame of the West, in the War of the Ring."
-  }
+  },
+  "pages": {
+    "first-project": {
+      "about": "This is the first project of my website.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
+    },
+    "second-project": {
+      "about": "This is the second project of my website"
+    }
+  } 
 }

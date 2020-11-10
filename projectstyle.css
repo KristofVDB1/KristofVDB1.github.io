@@ -1,0 +1,122 @@
+img {
+  transform-origin: top left;
+}
+
+.project1-banner {
+  height: 100vh;
+  align-items: center;
+  animation: appearingBanner 1.5s;
+}
+
+section#project1-banner {
+  background: url('./images/20004_02_CAM004a.jpg') no-repeat center center/cover;
+}
+
+.project-gallery {
+  /* https://tobiasahlin.com/blog/masonry-with-css/ */
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  max-height: 90vw;
+  padding-bottom: 30px;
+}
+.project-gallery .project-gallery-image {
+  width: 33.3%;
+  cursor: pointer;
+}
+.project-gallery .project-gallery-image[data-flipping] {
+  opacity: 1;
+  z-index: 3;
+  /* Re-order items into rows */
+}
+.project-gallery .project-gallery-image:nth-child(3n+1) {
+  order: 1;
+}
+.project-gallery .project-gallery-image:nth-child(3n+2) {
+  order: 2;
+}
+.project-gallery .project-gallery-image:nth-child(3n) {
+  order: 3;
+  /* Force new columns */
+}
+.project-gallery::before, .project-gallery::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+.project-gallery-image {
+  margin: 0;
+  display: block;
+  padding: 10px;
+}
+.project-gallery-image img {
+  display: block;
+  width: 100%;
+}
+
+.detail {
+  z-index: 11;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(25, 25, 25, 0);
+  display: flex;
+  pointer-events: none;
+  transition: background 0.3s linear;
+}
+.detail .project-gallery-image {
+  padding: 6%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.detail .project-gallery-image img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.detail .project-gallery-image figcaption {
+  display: none;
+}
+[data-state="detail"] .detail {
+  /* background: rgba(25, 25, 25, 0.85); */
+  pointer-events: auto;
+}
+[data-state="detail"] .detail .project-gallery-image {
+  opacity: 1;
+}
+[data-state="gallery"] .detail .project-gallery-image {
+  opacity: 0;
+  transition: none;
+}
+/* ---------------------------------- */
+body {
+  background: black;
+}
+#app {
+  pointer-events: none;
+}
+#app .project-gallery .project-gallery-image {
+  pointer-events: auto;
+}
+.project-gallery-image {
+  transition: opacity 0.5s linear;
+}
+#app:hover .project-gallery .project-gallery-image {
+  opacity: 0.5;
+}
+#app:hover .project-gallery .project-gallery-image[data-flipping], #app:hover .project-gallery .project-gallery-image:hover {
+  opacity: 1;
+  transition-duration: 0.3s;
+}

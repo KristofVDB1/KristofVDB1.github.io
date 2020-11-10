@@ -8,7 +8,6 @@
   <meta http-equiv="X-UA-Compatible">
   <title>IN CONTEXT.</title>
   <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 
@@ -21,7 +20,8 @@
         <ul class="nav-list" id="navigation">
           <li><a name="home" data-localize="menu.home" class="nav-link active" href="#home"></a></li>
           <li><a name="about" data-localize="menu.about" class="nav-link" href="#about"></a></li>
-          <li><a name="service" data-localize="menu.service" class="nav-link" href="#service"></a></li>
+          <li><a name="selected-works" data-localize="menu.selected-works" class="nav-link" href="#selected-works"></a>
+          </li>
           <li><a name="contact" data-localize="menu.contact" class="nav-link" href="#contact"></a></li>
         </ul>
         <div class="language-picker">
@@ -41,11 +41,17 @@
       </nav>
     </div>
   </header>
-  <a href="#about" name="scrolling-arrow" class="scrolling-arrow"></a>
+  <a href="#initial-quote" name="scrolling-arrow" class="scrolling-arrow"></a>
   <div class="container">
     <section id="home" class="banner" data-localize="content.home">
-      <!-- <h1>IN CONTEXT</h1> -->
       <div class="background-cover"></div>
+      <h1>IN CONTEXT</h1>
+    </section>
+    <section id="initial-quote" class="section__quote">
+      <div class="section__quote__content">
+        <h3 data-localize="quotes.first-quote-title">Quote</h2>
+          <p data-localize="quotes.first-quote" class="lead"></p>
+      </div>
     </section>
     <section id="about">
       <div class="section__content">
@@ -53,21 +59,63 @@
         <p data-localize="content.about" class="lead"></p>
       </div>
     </section>
-    <section id="service">
-      <div class="section__content">
-        <h2 data-localize="menu.service">Service</h2>
-        <p data-localize="content.service" class="lead"></p>
-        <div class="spotlight-group" data-control="">
-          <a name="spotlight" class="spotlight" href="./images/flower.jpg" data-description="This is a description.">
-            <img class="spotlight-image" src="./images/flower.jpg" alt="spotlight-image-preview">
+    <section id="selected-works">
+      <div class="section__content-selected-works">
+        <h2 data-localize="menu.selected-works">Selected Works</h2>
+        <p data-localize="content.selected-works" class="lead"></p>
+        <div class="gallery-image">
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM001a.jpg" alt="project1" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 1</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
           </a>
-          <a name="spotlight" class="spotlight" href="./images/mountain.jpg" data-description="This is a description.">
-            <img class="spotlight-image" src="./images/mountain.jpg" alt="spotlight-image-preview">
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM002a.jpg" alt="project2" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 2</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
           </a>
-          <a name="spotlight" class="spotlight" href="./images/sea.jpg" data-description="This is a description.">
-            <img class="spotlight-image" src="./images/sea.jpg" alt="spotlight-image-preview">
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM003a.jpg" alt="project3" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 3</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM004a.jpg" alt="project4" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 4</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM005a.jpg" alt="project5" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 5</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
           </a>
         </div>
+      </div>
+    </section>
+    <section id="second-quote" class="section__quote">
+      <div class="section__quote__content">
+        <h3 data-localize="quotes.second-quote-title">Quote</h2>
+          <p data-localize="quotes.second-quote" class="lead"></p>
       </div>
     </section>
     <section id="contact">
@@ -110,7 +158,7 @@
   <script src="./jquery.js"></script>
   <script src="./jquery.localize.min.js"></script>
   <script src="main.js"></script>
-  <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js"></script>
+  <!-- <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js"></script> -->
 </body>
 
 </html>
