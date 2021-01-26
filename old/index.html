@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script defer src="https://unpkg.com/core-js-bundle@3.6.5/minified.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>CONTEXT.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="navigation-container">
+      <nav class="nav" id="navigation">
+        <a href="index.html" name="logo" class="logo">Context.</a>
+        <div class="nav-cover" id="navigation"></div>
+        <ul class="nav-list" id="navigation">
+          <li><a name="home" data-localize="menu.home" class="nav-link active" href="#home"></a></li>
+          <li><a name="about" data-localize="menu.about" class="nav-link" href="#about"></a></li>
+          <li><a name="selected-works" data-localize="menu.selected-works" class="nav-link" href="#selected-works"></a>
+          </li>
+          <li><a name="contact" data-localize="menu.contact" class="nav-link" href="#contact"></a></li>
+        </ul>
+        <div class="language-picker">
+          <label for="language__select">
+            <select id="language__select" class="language__select">
+              <option class="language__select__option">En</option>
+              <option class="language__select__option">Fr</option>
+              <option class="language__select__option">Nl</option>
+            </select>
+          </label>
+        </div>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <a href="#initial-quote" name="scrolling-arrow" class="scrolling-arrow"></a>
+  <div class="container">
+    <section id="home" class="banner" data-localize="content.home">
+      <div class="background-cover"></div>
+      <h1>CONTEXT</h1>
+    </section>
+    <section id="initial-quote" class="section__quote">
+      <div class="section__quote__content">
+        <h3 data-localize="quotes.first-quote-title">Quote</h2>
+          <p data-localize="quotes.first-quote" class="lead"></p>
+      </div>
+    </section>
+    <section id="about">
+      <div class="section__content">
+        <h2 data-localize="menu.about">About</h2>
+        <p data-localize="content.about" class="lead"></p>
+      </div>
+    </section>
+    <section id="selected-works">
+      <div class="section__content-selected-works">
+        <h2 data-localize="menu.selected-works">Selected Works</h2>
+        <p data-localize="content.selected-works" class="lead"></p>
+        <div class="gallery-image">
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM001a.jpg" alt="project1" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 1</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM002a.jpg" alt="project2" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 2</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM003a.jpg" alt="project3" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 3</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM004a.jpg" alt="project4" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 4</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+          <a class="img-box" href="./project1.html">
+            <img src="/images/20004_02_CAM005a.jpg" alt="project5" />
+            <div class="transparent-box">
+              <div class="caption">
+                <p>Project 5</p>
+                <p class="opacity-low">Architect Design</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="second-quote" class="section__quote">
+      <div class="section__quote__content">
+        <h3 data-localize="quotes.second-quote-title">Quote</h2>
+          <p data-localize="quotes.second-quote" class="lead"></p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section__content">
+        <h2 data-localize="menu.contact">Contact</h2>
+        <p data-localize="content.contact" class="lead"></p>
+      </div>
+    </section>
+    <footer class="footer-distributed">
+
+      <!-- <div class="footer-left">
+          <img src="img/logo.png">
+				<h3>IN CONTEXT</h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					|
+					<a href="#about">About</a>
+					|
+					<a href="#service">Service</a>
+					|
+					<a href="#contact">Contact</a>
+				</p>
+			</div> -->
+      <div class="footer-right">
+        <!-- <p class="footer-company-about">
+					<span>About the company</span>
+					We offer training and skill building courses across Technology, Design, Management, Science and Humanities.</p> -->
+        <div class="footer-icons">
+          <a name="facebook" href="#"><i class="fa fa-facebook"></i></a>
+          <a name="twitter" href="#"><i class="fa fa-twitter"></i></a>
+          <a name="instagram" href="#"><i class="fa fa-instagram"></i></a>
+          <a name="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+          <a name="youtube" href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="./jquery.js"></script>
+  <script src="./jquery.localize.min.js"></script>
+  <script src="main.js"></script>
+  <!-- <script src="https://rawcdn.githack.com/nextapps-de/spotlight/0.6.3/dist/spotlight.cdn.js"></script> -->
+</body>
+
+</html>
