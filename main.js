@@ -44,6 +44,11 @@ function translate() {
   $("[data-localize]").localize("language", { language: "en" });
 }
 
+// appear on scroll
+AOS.init({
+  offset: 30,
+});
+
 
 translate();
 navigationContent();
