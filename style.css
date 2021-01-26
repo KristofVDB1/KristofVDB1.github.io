@@ -162,7 +162,8 @@ hr {
 }
 
 .pages-content div {
-  opacity: 1;
+  opacity: 0;
+  display: none;
   overflow-y: none;
   font-size: 1em;
   transition: opacity 0.5s ease-in;
@@ -390,7 +391,7 @@ hr {
   border: none;
 }
 
-/* IE11 hide native button (thanks Matt!) */
+/* IE11 hide native button  */
 select::-ms-expand {
 display: none;
 }
@@ -410,22 +411,6 @@ appearance: none;
 }
 
 /* ------------------- Helper classes ------------------- */
-
-.beforeScroll
-{
-  height: 100px; /*Whatever you want*/
-  width: 100%; /*Whatever you want*/
-  display: none;
-}
-
-
-/*Use this class when you want your content to be shown after some scroll*/
-.afterScroll
-{
-  height: 100px; /*Whatever you want*/
-  width: 100%; /*Whatever you want*/
-  display: block;
-}
 
 .slide-in {
   animation: slide-in 0.5s forwards;

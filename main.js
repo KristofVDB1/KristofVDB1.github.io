@@ -7,14 +7,15 @@ const gridContainer = document.getElementsByClassName('rig')[0];
 const navItems = document.getElementsByClassName('rig-cell');
 function navigationContent() {
   for (let i = 0; i < navItems.length; i++) {
-    const text = document.getElementById('pages-content__' + navItems[i].id);
     navItems[i].addEventListener('click', function () {
+      const text = document.getElementById('pages-content__' + navItems[i].id);
       gridContainer.style.setProperty('position', boolContentVisible ? 'relative' : 'absolute');
       gridContainer.setAttribute('class', 'rig slide-out');
       textContainer.style.setProperty('display', boolContentVisible ? 'none' : 'inline-table');
       text.style.setProperty('opacity', boolContentVisible ? 0 : 1);
       text.style.setProperty('display', boolContentVisible ? 'none': 'block');
       boolContentVisible = !boolContentVisible;
+      AOS.refreshHard();
     });
   }
 }
@@ -33,6 +34,7 @@ const menuButton = document.getElementById('pages-content__close').addEventListe
     text.style.setProperty('opacity', 0);
     text.style.setProperty('display', 'none');
   }
+  AOS.refreshHard();
 });
 
 // translate
