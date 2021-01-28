@@ -46,9 +46,10 @@ header {
 }
 
 .header-banner {
-  height: 85vh;
+  height: 80vh;
   width: calc(90vw - (90vw - 90%));
-  margin: 5vh 5vw 5vh 5vw;
+  margin: 5vw 5vw 5vh 5vw;
+  margin-top: calc(5vw - ((5vw) - 5%));
   align-items: center;
   color: white;
   position: relative;
@@ -82,7 +83,6 @@ header {
 
 .background-cover { 
   background: black;
-  /* background-image: linear-gradient(to right, #aaa, #000, #000); */
   top: 0px;
   left: 0px;
   height: 100%;
@@ -96,7 +96,6 @@ header {
 /* --------------------------- section title ---------------------------------*/
 
 .section-title {
-  /* display: flex; */
   justify-content: center;
   margin:  8% 0% 4% 0%;
 }
@@ -203,13 +202,13 @@ hr {
   margin: 0 0em;
   overflow: hidden;
   list-style-type: none;
-  margin-right: -0.2em
+  margin-right: -0.2em;
 }
 .expanding-grid .links > li {
   box-sizing: border-box;
   text-decoration: none;
   float: left;
-  padding: 0.1em 0.2em 0.1em 0em;
+  padding: 0.3em 0.4em 0.1em 0em;
 }
 .expanding-grid .links > li a {
   color: #fff;
@@ -235,20 +234,6 @@ hr {
 .expanding-grid .links > li a.active .overlay {
   background: rgba(0, 0, 0, 0.60);
 }
-/* .expanding-grid .links > li a.active:after {
-  background-color: transparent;
-  border-bottom: 0.375em solid #888;
-  border-left: 0.375em solid transparent;
-  border-right: 0.375em solid transparent;
-  bottom: -0.5em;
-  content: '';
-  height: 0;
-  left: 50%;
-  margin-left: -0.375em;
-  position: absolute;
-  width: 0;
-} */
-
 .expanding-grid .spacer {
   background-color: #888;
   clear: both;
@@ -347,7 +332,7 @@ hr {
 
 .img-box {
   box-sizing: content-box;
-  margin: 2px 4px 2px 0px;
+  margin: 0.3em 0.4em 0.1em 0em;
   min-height: 250px;
   width: 100%;
   overflow: hidden;
@@ -438,18 +423,16 @@ hr {
 }
 
 .language-picker {
-  display: inline-block;
+  display: block;
   position: absolute;
   text-align: left;
   margin-right: 20px;
-  /* margin-top: 10px; */
-  top: 0;
-  right: 5%;
+  top: 10px;
+  right: 40px;
   width: 50px;
   height: 34px;
   cursor: pointer;
   border: none;
-  /* color: white; */
   z-index: 20;
 }
 
@@ -578,4 +561,3 @@ appearance: none;
   0% { -webkit-transform: translateX(0%); }
   100% { -webkit-transform: translateX(-120%); }
 }
-
