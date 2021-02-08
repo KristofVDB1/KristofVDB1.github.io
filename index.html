@@ -15,24 +15,22 @@
 <body>
   <div class="navigation-container">
     <nav class="nav" id="navigation">
-      <!-- <a href="index.html" name="logo" class="logo">Context.</a> -->
-      <!-- <ul class="nav-list" id="navigation">
-        <li><a name="home" data-localize="menu.home" class="nav-link active" href="#home"></a>Home</li>
-        <li><a name="contact" data-localize="menu.contact" class="nav-link" href="#contact"></a>Work</li>
-      </ul> -->
-      <!-- this is for the language picker -->
-      <div class="language-picker">
-        <label for="language__select">
-          <select id="language__select" class="language__select">
-            <option class="language__select__option">En</option>
-            <option class="language__select__option">Fr</option>
-            <option class="language__select__option">Nl</option>
-          </select>
-        </label>
+      <div class="icon-menu">
+        <a href="https://nl.wikipedia.org/wiki/The_Lord_of_the_Rings_%28films%29" target="_blank" class="icon"></a>
+        <a href="https://nl.wikipedia.org/wiki/The_Lord_of_the_Rings_%28films%29" target="_blank" class="icon"></a>
+        <a href="https://nl.wikipedia.org/wiki/The_Lord_of_the_Rings_%28films%29" target="_blank" class="icon"></a>
+        <a class="language-picker">
+          <label for="language__select">
+            <select id="language__select" class="language__select">
+              <option class="language__select__option">En</option>
+              <option class="language__select__option">Fr</option>
+              <option class="language__select__option">Nl</option>
+            </select>
+          </label>
+        </a>
       </div>
     </nav>
   </div>
-
   <div class="container">
     <header class="header-banner">
       <h1 class="header-banner__h1">CONTEXT</h1>
@@ -43,14 +41,14 @@
 
     <div class="content-container">
       <div class="expanding-grid">
-	
+
         <ul class="links">
           <li>
             <a href="#about" class="links-img01">
-            <div class="overlay"></div>
-            <p data-localize="menu.about"></p>
-          </a>
-        </li>
+              <div class="overlay"></div>
+              <p data-localize="menu.about"></p>
+            </a>
+          </li>
           <li>
             <a href="#services" class="links-img02">
               <div class="overlay"></div>
@@ -82,51 +80,63 @@
             </a>
           </li>
         </ul>
-      
+
         <div id="about" class="expanding-container">
-          <article class="hentry">
+          <article class="hentry red">
             <h1 class="entry-title">Title</h1>
-            <div class="entry-image"><div><img class="img-placeholder__img" src="/images/20004_02_CAM001a.jpg"/> </div></div>
+            <div class="entry-image">
+              <div><img class="img-placeholder__img" src="/images/20004_02_CAM001a.jpg" /> </div>
+            </div>
             <p data-localize="content.about">about</p>
           </article>
         </div>
-      
+
         <div id="services" class="expanding-container">
-          <article class="hentry">
+          <article class="hentry dark-green">
             <h1 class="entry-title">Title</h1>
-            <div class="entry-image"><div><img class="img-placeholder__img" src="/images/20004_02_CAM002a.jpg"/></div></div>
+            <div class="entry-image">
+              <div><img class="img-placeholder__img" src="/images/20004_02_CAM002a.jpg" /></div>
+            </div>
             <p data-localize="content.services">services</p>
           </article>
         </div>
-      
+
         <div id="workflow" class="expanding-container">
-          <article class="hentry">
+          <article class="hentry red">
             <h1 class="entry-title">Title</h1>
-            <div class="entry-image"><div><img class="img-placeholder__img" src="/images/20004_02_CAM003a.jpg"/></div></div>
+            <div class="entry-image">
+              <div><img class="img-placeholder__img" src="/images/20004_02_CAM003a.jpg" /></div>
+            </div>
             <p data-localize="content.workflow">workflow</p>
           </article>
         </div>
-      
+
         <div id="pricing" class="expanding-container">
-          <article class="hentry">
+          <article class="hentry yellow">
             <h1 class="entry-title">Title</h1>
-            <div class="entry-image"><div><img class="img-placeholder__img" src="/images/20004_02_CAM004a.jpg"/></div></div>
+            <div class="entry-image">
+              <div><img class="img-placeholder__img" src="/images/20004_02_CAM004a.jpg" /></div>
+            </div>
             <p data-localize="content.pricing">pricing</p>
           </article>
         </div>
-      
+
         <div id="contact" class="expanding-container">
-          <article class="hentry">
+          <article class="hentry yellow">
             <h1 class="entry-title">Title</h1>
-            <div class="entry-image"><div><img class="img-placeholder__img" src="/images/20004_02_CAM005a.jpg"/></div></div>
+            <div class="entry-image">
+              <div><img class="img-placeholder__img" src="/images/20004_02_CAM005a.jpg" /></div>
+            </div>
             <p data-localize="content.contact">contact</p>
           </article>
         </div>
-      
+
         <div id="jobs" class="expanding-container">
-          <article class="hentry">
+          <article class="green hentry">
             <h1 class="entry-title">Title</h1>
-            <div class="entry-image"><div><img class="img-placeholder__img" src="/images/20004_02_CAM001a.jpg"/></div></div>
+            <div class="entry-image">
+              <div><img class="img-placeholder__img" src="/images/20004_02_CAM001a.jpg" /></div>
+            </div>
             <p data-localize="content.jobs">jobs</p>
           </article>
         </div>
@@ -374,248 +384,32 @@
             </a>
           </div>
         </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM001a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image01"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM002a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image02"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM003a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image03"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM004a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image04"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM005a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image05"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM001a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image06"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM002a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image07"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM003a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image08"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM004a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image09"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM005a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image10"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM001a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image01"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM002a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image02"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM003a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image03"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM004a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image04"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM005a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image05"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM001a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image06"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM002a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image07"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM003a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image08"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="img-box">
-            <a href="./images/20004_02_CAM004a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image09"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="image-row" data-aos="fade-up">
-          <div class="img-box">
-            <a href="./images/20004_02_CAM005a.jpg" data-fancybox="images" data-caption="Text">
-              <div class="image10"></div>
-              <div class="transparent-box">
-                <div class="caption">
-                  <p>Project 1</p>
-                  <p class="opacity-low">Architect Design</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
 
 
     </div>
 
   </div>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-6">
+        <p><i class="fa fa-phone"></i> +44 (0)123 456 789</p>
+			  <p><i class="fa fa-envelope"></i> emilebroucke@gmail.com</p>
+			  <p><i class="fa fa-instagram"></i> emileLovesGandalf</p>
+			  <p><i class="fa fa-behance"></i> emileLovesGandalf</p>
+      </div>
+      <div class="col-6">
+        <h3>In Context</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi a unde iste harum quis veritatis laudantium tempora, error veniam, incidunt?</p>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-12">&copy; 2021 Kristof Vandenbroucke</div>
+    </div>
+</footer>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./jquery.js"></script>
