@@ -62,7 +62,7 @@ details summary::-webkit-details-marker {
 .opt-wrapper {
   margin-top: 10px;
   display: table;
-  max-width: 40px;
+  max-width: 30px;
 }
 select {
   margin-top: 10px;
