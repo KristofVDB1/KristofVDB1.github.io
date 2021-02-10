@@ -18,6 +18,57 @@ a {
 }
 
 /* ----------- Actual css of the website ----------------- */
+body {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 10;
+}
+
+summary {
+  display: inline-table;
+  background-color: transparent;
+  /* padding-right: 10px; */
+  cursor: pointer;
+}
+details {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+button.selected {
+  display: none
+}
+
+button {
+  color: white;
+  display: block;
+  width: 100%;
+  background: none;
+  border: 0;
+  font-size: 1em;
+  padding: 2px;
+  cursor: pointer;
+  text-align: left;
+}
+
+button:hover {
+  background: #4FAAA1;
+  transition: 0.3s;
+}
+
+details summary::-webkit-details-marker {
+  display: none !important;
+}
+.opt-wrapper {
+  margin-top: 10px;
+  display: table;
+  max-width: 40px;
+}
+select {
+  margin-top: 10px;
+  display: inline-block;
+}
+
 
 /* Container */
 .container {
@@ -281,7 +332,7 @@ hr {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.expanding-grid .hentry .entry-image {
+.entry-image {
   box-sizing: border-box;
   float: right;
   margin-left: 1em;
@@ -543,7 +594,8 @@ select::-ms-expand {
 
 .language__select__option {
   text-transform: none;
-  background-color: none;
+  background-color: transparent;
+  border: none;
   color: #000;
   font-size: 1em;
   z-index: 1;
@@ -636,6 +688,9 @@ select::-ms-expand {
   .expanding-grid .links>li:nth-of-type(2n+1) {
     clear: left;
   }
+  .entry-image {
+    width: 0%;
+  }
 }
 
 @media only screen and (min-width: 40em) and (max-width: 59.99em) {
@@ -657,6 +712,10 @@ select::-ms-expand {
 
   .expanding-grid .links>li:nth-child(2) {
     padding-top: 0px;
+  }
+
+  .entry-image {
+    width: 50%;
   }
 }
 

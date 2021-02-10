@@ -21,12 +21,8 @@
     "jobs": "België ontstond na de Belgische Revolutie in 1830 toen het zich afscheidde van het Verenigd Koninkrijk der Nederlanden, waar het sinds 1815 toe behoorde. Na de onafhankelijkheid werd de jonge natie – vooral door de ontwikkeling van een zware industrie in Wallonië – een van de voortrekkers in de Industriële Revolutie. De ontwikkeling van Vlaanderen bleef achter tot het economisch zwaartepunt naar het noorden begon te verschuiven vanaf de jaren 1960. Dat is ook de periode van de vastlegging van de taalgrens, de eerste stappen in de federalisering van het land, en van de onafhankelijkheid van de Belgische kolonie Congo en de mandaatgebieden Ruanda en Burundi. België groeide uit tot 's werelds 26ste economie, werd een van de welvarendste, meest ontwikkelde en meest geglobaliseerde landen ter wereld, en bouwde met zijn vrijemarkteconomie en een beperkte overheidsinmenging aan een uitgebreide verzorgingsstaat.",
     "contact": "België ontstond na de Belgische Revolutie in 1830 toen het zich afscheidde van het Verenigd Koninkrijk der Nederlanden, waar het sinds 1815 toe behoorde. Na de onafhankelijkheid werd de jonge natie – vooral door de ontwikkeling van een zware industrie in Wallonië – een van de voortrekkers in de Industriële Revolutie. De ontwikkeling van Vlaanderen bleef achter tot het economisch zwaartepunt naar het noorden begon te verschuiven vanaf de jaren 1960. Dat is ook de periode van de vastlegging van de taalgrens, de eerste stappen in de federalisering van het land, en van de onafhankelijkheid van de Belgische kolonie Congo en de mandaatgebieden Ruanda en Burundi. België groeide uit tot 's werelds 26ste economie, werd een van de welvarendste, meest ontwikkelde en meest geglobaliseerde landen ter wereld, en bouwde met zijn vrijemarkteconomie en een beperkte overheidsinmenging aan een uitgebreide verzorgingsstaat.",
   },
-  "pages": {
-    "first-project": {
-      "about": "eerste project"
-    },
-    "second-project": {
-      "about": "tweede project"
-    }
-  } 
+  "footer": {
+    "title": "In Context",
+    "description": "The Lord of the Rings: The Fellowship of the Ring is het eerste deel van Peter Jacksons filmtrilogie The Lord of the Rings, gebaseerd op J.R.R. Tolkiens gelijknamige bestseller. De film was in 2002 genomineerd voor dertien Oscars en won er uiteindelijk vier. Het verhaal gaat over de hobbit Frodo Balings, die een magische ring moet vernietigen voordat de duistere Sauron hem terugvindt"
+  }
 }
