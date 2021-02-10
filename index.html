@@ -21,7 +21,7 @@
         <a href="https://nl.wikipedia.org/wiki/The_Lord_of_the_Rings_%28films%29" target="_blank" class="icon"></a>
         <a>
           <details class='details'>
-            <summary class="summary">
+            <summary class="summary" id="language-picker">
             </summary>
             <div class='opt-wrapper'>
               <button type="button" data-lang='en' class='opt selected'>
@@ -33,16 +33,6 @@
             </div>
           </details>
         </a>
-
-        <!-- <a class="language-picker">
-          <label for="language__select">
-            <select id="language__select" class="language__select">
-              <option class="language__select__option">En</option>
-              <option class="language__select__option">Fr</option>
-              <option class="language__select__option">Nl</option>
-            </select>
-          </label>
-        </a> -->
       </div>
     </nav>
   </div>
@@ -57,7 +47,7 @@
     <div class="content-container">
       <div class="expanding-grid">
 
-        <ul class="links">
+        <ul class="links" data-aos="fade-up">
           <li>
             <a href="#about" class="links-img01">
               <div class="overlay"></div>

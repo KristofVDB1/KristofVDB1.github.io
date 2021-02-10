@@ -68,8 +68,8 @@ btn.click(function () {
   })
 })
 
-window.addEventListener('click', function() {
-  if (det[0].open) {
+window.addEventListener('click', function(e) {
+  if (det[0].open && e.target.id !== 'language-picker') {
     det.removeAttr('open');
   }
 })
