@@ -2,11 +2,11 @@
 
 // smooth scrolling
 // scroll-effect
-const scrolling = new SmoothScroll('a[href*="#"]',
+const scrolling = new SmoothScroll('a[href*="##"]',
   {
     speed: 600,
     offset: 5,
-    updateUrl: false,
+    // updateUrl: false,
   });
 
 // navigation event listeners
