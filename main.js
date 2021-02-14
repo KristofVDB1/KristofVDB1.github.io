@@ -34,7 +34,7 @@ const browser = getBrowser();
 
 console.log(browser, 'browser');
 
-if (browser.name !== 'IE') {
+if (browser.name === 'IE') {
   window.location = 'unsupported-browser.html';
 }
 
