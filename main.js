@@ -1,5 +1,15 @@
 // definition of all the functions
 
+// smooth scrolling
+
+// scroll-effect
+const scrolling = new SmoothScroll('a[href*="#"]',
+  {
+    speed: 600,
+    offset: 5,
+    updateUrl: false,
+  });
+
 // navigation event listeners
 let boolContentVisible = false;
 const textContainer = document.getElementsByClassName('pages-content')[0];

@@ -31,7 +31,7 @@ summary {
   cursor: pointer;
 }
 details {
-  margin-right: 10px;
+  margin: 10px;
   display: inline-block;
 }
 
@@ -60,7 +60,8 @@ details summary::-webkit-details-marker {
   display: none !important;
 }
 .opt-wrapper {
-  margin-top: 10px;
+  margin-top: 3px;
+  font-size: 0.9em;
   display: table;
   max-width: 30px;
 }
@@ -198,6 +199,46 @@ hr {
   height: 1px;
   background-color: #b7d0e2;
 }
+
+/* --------------------------- Scroll arrow ---------------------------------*/
+
+.scrolling-arrow, .scrolling-arrow:before {
+  position: absolute;
+  left: 50%;
+}
+
+.scrolling-arrow {
+  width: 40px;
+  height: 40px;
+  top: 80vh;
+  margin: -20px 0 0 -20px;
+  padding: 10px;
+  transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 3px #fff solid;
+  border-bottom: 3px #fff solid;
+  animation: appearingArrow 1.2s;
+  z-index: 20;
+}
+
+  
+.scrolling-arrow:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin: -20px 0px 0px -20px;
+  border-left: none;
+  border-top: none;
+  border-right: 3px #fff solid;
+  border-bottom: 3px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+  z-index: 1;
+}
+
 
 /* --------------------------- page grid ---------------------------------*/
 .overlay {
@@ -507,7 +548,7 @@ hr {
   flex: 1;
 }
 
-/* ------------------- Language picker ------------------- */
+/* ------------------- Icon menu ------------------- */
 
 .icon-menu {
   color: #fff;
@@ -548,15 +589,22 @@ content:'\f082';
 .icon:nth-of-type(3):before {
 content:'\f1b5';
 }
-/* .icon:nth-of-type(4):before {
-content:'\f113';
+
+/* ------------------- Language picker ------------------- */
+
+.language-menu {
+  color: #fff;
+  font-size: 1.3em;
+  display: inline-block;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  margin-left:2vw;
+  cursor: pointer;
+  border: none;
+  z-index: 20;
+  overflow: hidden;
 }
-.icon:nth-of-type(5):before {
-content:'\f17d';
-}
-.icon:nth-of-type(6):before {
-content:'\f1cb';
-} */
 
 .language-picker {
   color: #fff;
@@ -567,39 +615,6 @@ content:'\f1cb';
   border: none;
   z-index: 20;
 } 
-
-.language-picker:after {
-  content: '\f078';
-  left: 30px;
-  top: -30px;
-  border: none;
-  position: relative;
-  pointer-events: none;
-  border: none;
-}
-
-.language__select {
-  position: relative;
-  cursor: pointer;
-  background: none;
-  color: inherit;
-  font-size: 0.9em;
-  border: none;
-}
-
-/* IE11 hide native button  */
-select::-ms-expand {
-  display: none;
-}
-
-.language__select__option {
-  text-transform: none;
-  background-color: transparent;
-  border: none;
-  color: #000;
-  font-size: 1em;
-  z-index: 1;
-}
 
 /* ------------------- Footer ------------------- */
 .row:after, .tab-row:after {
@@ -749,6 +764,26 @@ select::-ms-expand {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes appearingArrow {
+  0% {
+    opacity: 0;
+    margin-top: -50px;
+  }
+  100% {
+    margin-top: -20px;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-10px, -10px);
   }
 }
 
