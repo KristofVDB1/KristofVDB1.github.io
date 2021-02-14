@@ -106,7 +106,7 @@ header {
   align-items: center;
   color: white;
   position: relative;
-  animation: appearingBanner 1.5s;
+  animation: appearingBanner 1s;
   background: url('./images/20004_02_CAM002a.jpg') no-repeat center;
 }
 
