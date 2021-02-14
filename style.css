@@ -35,11 +35,11 @@ details {
   display: inline-block;
 }
 
-button.selected {
+.opt.selected {
   display: none
 }
 
-button {
+.opt {
   color: white;
   display: block;
   width: 100%;
@@ -51,7 +51,7 @@ button {
   text-align: left;
 }
 
-button:hover {
+.opt:hover {
   background: #4FAAA1;
   transition: 0.3s;
 }
@@ -214,6 +214,8 @@ hr {
   margin: -20px 0 0 -20px;
   padding: 10px;
   transform: rotate(45deg);
+  cursor: pointer;
+  background: none;
   border-left: none;
   border-top: none;
   border-right: 3px #fff solid;
@@ -221,9 +223,9 @@ hr {
   animation: appearingArrow 1.2s;
   z-index: 20;
 }
-
   
 .scrolling-arrow:before {
+  background-color: none;
   content: '';
   width: 30px;
   height: 30px;

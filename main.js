@@ -5,9 +5,14 @@
 const scrolling = new SmoothScroll('a[href*="#__"]',
   {
     speed: 600,
-    offset: 5,
-    // updateUrl: false,
+    updateUrl: false,
   });
+
+const scrollButton = document.getElementById('scrolling-button');
+scrollButton.addEventListener('click', () => {
+  const height = (window.innerHeight * 0.85) + (window.innerWidth * 0.02);
+  scrolling.animateScroll(height);
+})
 
 // navigation event listeners
 let boolContentVisible = false;
@@ -77,7 +82,7 @@ btn.click(function () {
   })
 })
 
-window.addEventListener('click', function(e) {
+window.addEventListener('click', function (e) {
   if (det[0].open && e.target.id !== 'language-picker') {
     det.removeAttr('open');
   }
